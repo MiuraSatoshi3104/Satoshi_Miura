@@ -1,0 +1,43 @@
+ header {
+    height: 65px;
+    width:100%;
+    background-color: aquamarine;
+    position:fixed;
+    z-index: 10;
+ }
+ 
+ h1 {
+    font-size: 20px;
+    text-align: center;
+    margin:200px auto ;
+ }
+
+ .header-list ul {
+    list-style: none;
+    float: left;
+    font:bold ;
+    margin: 20px 30px;
+ }
+
+ .header {
+    background-color: rgb(98, 235, 235);
+    height: 85px;
+ }
+
+ .header-logo {
+    float:left;
+    margin:40px 20px;
+    font-size: 25px;
+    font:bold;
+ }
+
+ .footer {
+    background-color: black;
+    height:40px;
+ }
+
+ .footer-list a{
+    color:blue;
+    font-size: 20px;
+    float:right;
+ }
