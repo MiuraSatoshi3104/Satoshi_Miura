@@ -1,22 +1,26 @@
- header {
-    height: 65px;
-    width:100%;
+  header {
+    height: 100px;
+    width: 100%;
     background-color: aquamarine;
-    position:fixed;
+    position: fixed;
+    /* position: relative; */
+    top: 0px;
     z-index: 10;
  }
- 
- h1 {
+
+
+ .header h1 {
     font-size: 20px;
     text-align: center;
-    margin:200px auto ;
+    margin: 200px auto;
  }
 
- .header-list ul {
+ .header ul {
     list-style: none;
-    float: left;
-    font:bold ;
+    float: right;
+    font: bold;
     margin: 20px 30px;
+    display: inline;
  }
 
  .header {
@@ -24,20 +28,93 @@
     height: 85px;
  }
 
- .header-logo {
-    float:left;
-    margin:40px 20px;
+ .header logo {
+   position:absolute;
+    float: right;
+    margin: 40px 20px;
     font-size: 25px;
-    font:bold;
+    font: bold;
+ }
+
+
+
+ .footer-list a {
+    color: blue;
+    font-size: 20px;
+    float: right;
+ }
+
+ .top-wrapper {
+    position: relative;
+    /*絶対参照*/
+    grid-area: top-wrapper;
+    background-color: yellowgreen;
+    height: 800px;
+    width: 100vw;
+ }
+
+ .introduce {
+    background-color: darkgoldenrod;
+    height: 350px;
+    width: 500px;
+    float: right;
+    margin: 100px;
+ }
+
+ .img1 {
+    position: absolute;
+    left: 50px;
+    bottom: 350px;
+    margin: 10px;
+    width: 500px;
+    height: 350px;
+ }
+
+ .img2 {
+   position: absolute;
+   left: 50px;
+   bottom: 20px;
+    margin: 10px;
+    width: 500px;
+    height: 350px;
+ }
+
+ .second-wrapper {
+    grid-area: second-wrapper;
+    background-color: blue;
+    height: 800px;
+ }
+
+ .third-wrapper {
+    grid-area: third-wrapper;
+    background-color: navajowhite;
+    height: 800px;
+ }
+
+ .logo {
+    width: 100px;
+    margin: 30px;
  }
 
  .footer {
     background-color: black;
-    height:40px;
+    height: 120px;
  }
 
- .footer-list a{
-    color:blue;
-    font-size: 20px;
-    float:right;
+ a{
+   font-size: 50px;
  }
+ a:link{
+   color: blue;
+ }
+ a:visited{
+   color:purple;
+ }
+ a:hover{
+   color:green;
+ }
+ a:active{
+   color:grey;
+ }
+ 
+ 
