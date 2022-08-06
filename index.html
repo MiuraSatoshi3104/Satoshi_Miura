@@ -8,64 +8,82 @@
   <script type="text/javascript" src="modules/lodash.js"></script>
   <script type="text/javascript" src="test-boilerplate.js"></script>
   <script type="text/javascript" src="script.js"></script>
-  <link rel ="stylesheet" href ="presentation.css">
+  <link rel="stylesheet" href="presentation.css">
+  <!--↓javascriptの処理追加-->
+  <script type="text/javascript">
+    function comment() {
+      if (comment_form.number.value >= 21) {
+        alert("20以下の数値を入力して下さい！");
+        return false;
+      } else if(comment_form.number.value == 1){
+        alert("VSCODEのフォルダ構成がわからず迷子ー、質問もどうすれば良いかわからないー");
+        return true;
+      }
+    }
+  </script>
+
 </head>
 
 <body>
   <header>
-  <div class="header"> <!--FIX予定-->
-     <div class="header-logo">基礎クラス最終プレゼン</div>
-     <div class="header-list">
-        <ul>自己紹介</ul>
-        <ul>学び</ul>
-        <ul>これから</ul>
-     </div>
-    <h1>Change myself Change the world!</h1> <!--本当はセンターにしてFIX　CSS-->
-  </div>
-</header>
+    <h1>Change myself Change the world!</h1>
+    <img class="logo"
+      src="https://github.com/MiuraSatoshi3104/Satoshi_Miura/blob/master-branch/%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.jpg?raw=true">
+    <!-- <div class="header-list"> -->
+    <ul>自己紹介</ul>
+    <ul>学び</ul>
+    <ul>これから</ul>
+    <!-- </div> -->
+  </header>
 
-  <div class="top-wrapper"> <!--P1相当-->
-    <img src="https://github.com/MiuraSatoshi3104/Satoshi_Miura/blob/cf57ccb02922efbb6f2cf28dbacfa2a0e086d360/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%891.JPG">
-    <img src="">
-    <img src="">
-    <img src="">
-    <p>名前</p>
-    <p>部署名</p>
-    <p>#タグ</p>
+  <div class="header"></div>
+
+
+  <div class="top-wrapper">
+    <!--P1相当-->
+    <img class="img1"
+      src="https://github.com/MiuraSatoshi3104/Satoshi_Miura/blob/master-branch/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%891.JPG?raw=true">
+    <img class="img2"
+      src="https://github.com/MiuraSatoshi3104/Satoshi_Miura/blob/master-branch/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%892.JPG?raw=true">
+    <div class="introduce">
+      <p>名前: 三浦　哲（さとし）</p>
+      <p>部署名：　高岡塗装成形製造技術部</p>
+      <p>#タグ　＃ジーンズソムリエ　＃今、学生をしている2足の草鞋　＃革製品</p>
+    </div>
+
     <a>Company mail-adress</a>
     <a>Gmail-adress</a>
   </div>
 
-  <div class="second-wrpper">  <!--P2相当-->
-
+  <div class="second-wrapper">
+    <!--P2相当-->
+    <p>このエリア2nd</p>
+    <form action="how-to-index.html" method="get" name="comment_form">
+      <p>DIG基礎講座あるあるが言いたい！<br>
+        印象に残っているLessonナンバーは？？：<br>
+        <input type="text" name="number">
+      </p>
+      <p><input type="button" value="あるある知りたい人はPUSH" id="button2" onClick="return comment();"></p>
+    </form>
   </div>
 
-  <div class="third-wrapper"> <!--P3相当-->
-    <a></a> <!--モナークに飛ぶようにリンク-->
-    <p>残りの履修状況</p>
-    <p>自分の成長コメント</p>
-    <p>事務局、仲間への感謝</p>
+  <div class="third-wrapper">
+    <!--P3相当-->
+    <a></a>
   </div>
 
 
-  <h2>Mac をお使いの方は、 <font color="blue"> Cmd + Option + J</font><br>
-    Windows/Linux をお使いの方は、 <font color="blue"> Control+Shift+J</font> <br>
-    をクリックして、デベロッパーツールを開いてください。</h2>
-  <h2>下記にユニコーンの画像が表示されていれば成功です！</h2>
-  <img src="https://github.com/MiuraSatoshi3104/Satoshi_Miura/blob/cf57ccb02922efbb6f2cf28dbacfa2a0e086d360/%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%891.JPG">
-  <h3>30分悩んで進まなくなったら…helpチャンネルで質問してみましょう！</h3>
-
-<div class="footer">
-  <div class="footer-logo"></div>
-  <div class="footer-list">
+  <div class="footer">
+    <div class="footer-logo"></div>
+    <div class="footer-list">
       <ul>
-          <a>mail</a>
-          <a>facebook</a>https://www.facebook.com/77satoshi77
-          <a>line</a>
+        <a href="www.facebook.com/77satoshi77">Facebook</a>
+        <!-- <a>mail</a>
+        <a>line</a> -->
       </ul>
-  </div>
+    </div>
 
-</div>
+  </div>
 
 
 </body>
